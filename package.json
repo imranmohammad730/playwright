@@ -1,0 +1,44 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "A comprehensive end-to-end testing automation framework built with Playwright for web application testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome'",
+    "test:parallel": "playwright test --workers=4",
+    "test:retry": "playwright test --retries=2",
+    "test:slow": "SLOW_MO=1000 playwright test",
+    "report": "playwright show-report",
+    "install-browsers": "playwright install",
+    "codegen": "playwright codegen",
+    "trace": "playwright show-trace",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "clean": "rm -rf test-results playwright-report node_modules"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "web-testing",
+    "qa",
+    "test-automation",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "dotenv": "^16.3.1"
+  }
+}
